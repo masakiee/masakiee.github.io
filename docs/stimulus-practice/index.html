@@ -5,15 +5,10 @@
   <meta name="viewport" content="width=device-width">
   <script type="module">
     import { Application, Controller } from "https://unpkg.com/@hotwired/stimulus/dist/stimulus.js"
-    window.Stimulus = Application.start()
+    import { HelloController } from '/stimulus-practice/js/hello_controller.js';
+    window.Stimulus = Application.start();
 
-    Stimulus.register("hello", class extends Controller {
-      static targets = [ "name" ]
-
-      connect() {
-        console.log('Hello World');
-      }
-    })
+    Stimulus.register("hello", HelloController);
   </script>
 </head>
 <body>
