@@ -3,23 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <script type="module">
-    import { Application, Controller } from "https://unpkg.com/@hotwired/stimulus/dist/stimulus.js"
-    window.Stimulus = Application.start()
-
-    Stimulus.register("hello", class extends Controller {
-      static targets = [ "name" ]
-
-      connect() {
-        console.log('Hello World');
-      }
-    })
-  </script>
 </head>
 <body>
-  <div data-controller="hello">
-    <input data-hello-target="name" type="text">
-    …
-  </div>
+  <ul>
+    <li>
+      <a href="/stimulus-practice">/stimulus-practice</a>
+    </li>
+  </ul>
 </body>
 </html>
